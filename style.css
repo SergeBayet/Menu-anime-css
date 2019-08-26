@@ -1,0 +1,50 @@
+.vertical-menu {
+	width:500px;
+}
+
+
+
+.icon img {
+	
+	width:38px;
+	
+}
+.icon {
+	
+	
+	background-color:#4C4B4B;
+	transition:all 1s;
+}
+.icon.active {
+	background-color:#919191;
+}
+.middle > * {
+	vertical-align:middle;
+}
+a.item {
+	z-index:-100;
+	opacity:0;
+	
+	margin-left:-320px;
+	text-decoration:none;
+	background-color:#333333;
+	color:white;
+	transition: all 1s;
+}
+a {
+	display:inline-block;
+	padding:16px; 
+	height:40px;
+	
+}
+a.item {
+	width:200px;
+}
+ .icon:hover {
+	background-color:white;
+	opacity:0.5;
+} 
+.icon:hover + a.item {
+	transform: translateX(320px);
+	opacity:1;
+}
